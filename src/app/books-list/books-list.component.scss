@@ -1,0 +1,44 @@
+
+@import "../shared/variables";
+.bk-lst-wrpr{
+  .search-link{
+    float: right;
+    height: 100%;
+    padding: 0 20px;
+    line-height: 52px;
+  }
+  .search-link a{
+    color:white;
+  }
+  .book-shelve-wrapper{
+    text-align: center;
+    border: 1px solid grey;
+    width: 100%;
+    margin-top: 20px;
+    border-top: 0;
+  }
+  .hdr-wrpr{
+    background-color: $primary-theme-color;
+    width: 100%;
+  }
+  .add-btn{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: $xxl-fnt;
+  }
+  .shelve-title {
+    background: #c7bdbd;
+    line-height: 50px;
+  }
+
+  .shelve-container{
+    width: 96%;
+    flex:1;
+  }
+}
+
+

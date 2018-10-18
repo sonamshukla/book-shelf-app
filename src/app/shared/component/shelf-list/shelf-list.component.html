@@ -1,0 +1,7 @@
+<div class="cat-list" *ngIf="selectedBook.isShelfListVisible">
+    <ul>
+      <ng-container *ngFor="let cat of category">
+        <li (click)="valueChanged(cat)" [ngClass]="{'selected': checkSelected(cat)}"><a><strong>{{cat}}</strong></a></li>
+      </ng-container>
+    </ul>
+ </div>

@@ -1,0 +1,29 @@
+<div class="com-wrapper bk-lst-wrpr">
+  <div class="hdr-wrpr">
+    <div class="dis-inline">
+      <app-header title="Book Shelf App" [isBackBtn]="false"></app-header>
+    </div>
+    <div class="dis-inline search-link">
+      <a routerLink="/search-book">Search</a>
+    </div>
+  </div>
+  <div class="shelve-container">
+    <div *ngIf="wantToBooks.length" class="book-shelve-wrapper">
+      <h2 class="shelve-title">Want to Read</h2>
+      <app-books [books]="wantToBooks"></app-books>
+    </div>
+    <div *ngIf="currentlyReadingBooks.length" class="book-shelve-wrapper">
+      <h2 class="shelve-title">Currently Reading</h2>
+      <app-books [books]="currentlyReadingBooks" ></app-books>
+    </div>
+    <div *ngIf="readBooks.length" class="book-shelve-wrapper">
+      <h2 class="shelve-title">Read</h2>
+      <app-books [books]="readBooks"></app-books>
+    </div>
+    <div *ngIf="newBooks.length" class="book-shelve-wrapper">
+      <h2 class="shelve-title">New Books</h2>
+      <app-books [books]="newBooks"></app-books>
+    </div>
+  </div>
+  <button class="add-btn" (click)="goToAddBookPage()">+</button>
+</div>
